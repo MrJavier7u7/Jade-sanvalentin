@@ -4,29 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>San Valentín</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="estilos.css"> <!-- Enlace a los estilos -->
 </head>
 <body>
-    <div id="inicio">
-        <h1>¿Quieres ser mi San Valentín otra vez?</h1>
-        <button id="btn-si">Sí</button>
-        <button id="btn-no">No</button>
+
+    <!-- Sección de la pregunta inicial -->
+    <div id="pregunta">
+        <p>¿Quieres ser mi San Valentín otra vez?</p>
+        <button onclick="mostrarContenido()">Sí</button>
+        <button id="no-btn">No</button>
     </div>
 
-    <div id="contenido" class="oculto">
+    <!-- Contenido que se mostrará después de hacer clic en "Sí" -->
+    <div id="contenido" style="display: none;">
+        <p id="mensaje">
+            Gracias por aceptarme, otra vez. Estoy siempre muy agradecido por todo lo que me has dado, mi amor. 
+            Y yo siempre, siempre te haré la persona más feliz del mundo. Yo siempre te entregaré mi amor, mi corazón, 
+            mi alma, mi cuerpo. Yo te daré todo lo que tú quieras, mi amor. Perdóname por todo lo que hemos fallado, 
+            pero quiero hacer otra vez contigo. Quiero empezar otra vez y darte lo que te mereces. Te amo tanto, mi niña. 
+            Y pasemos este día tan hermoso juntos. Te amo, mi niña. Y siempre serás mi princesita.
+        </p>
+
+        <!-- Música -->
         <audio autoplay loop>
-            <source src="Joji - Like You Do (Español).mp3" type="audio/mp3">
+            <source src="assets/I-like-you-joji.mp3" type="audio/mp3">
+            Tu navegador no soporta el formato de audio.
         </audio>
-        <div id="mensaje">
-            <p>Gracias por aceptarme, otra vez. Estoy siempre muy agradecido por todo lo que me has dado, mi amor. 
-            Y yo siempre, siempre te haré la persona más feliz del mundo. Yo siempre te entregaré mi amor, mi corazón, mi alma, mi cuerpo. 
-            Yo te daré todo lo que tú quieras, mi amor. Perdóname por todo lo que hemos fallado, pero quiero hacer otra vez contigo. 
-            Quiero empezar otra vez y darte lo que te mereces. Te amo tanto, mi niña. Y pasemos este día tan hermoso juntos. 
-            Te amo, mi niña. Y siempre serás mi princesita.</p>
-        </div>
-        <div class="corazones"></div>
+
+        <!-- Imagen de fondo con girasoles -->
+        <img id="girasoles" src="assets/ramo-girasoles.jpg" alt="Ramo de girasoles">
+
+        <!-- Animaciones de corazones -->
+        <div class="heart"></div>
+        <div class="heart"></div>
+        <div class="heart"></div>
     </div>
 
-    <script src="script.js"></script>
+    <script src="script.js"></script> <!-- Enlace al script -->
 </body>
 </html>
